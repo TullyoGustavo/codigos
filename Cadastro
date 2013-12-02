@@ -8,6 +8,7 @@
                 
                 printf("Digite o codigo do produto:\n");
                   scanf("%i",&estoque[i].codigo);
+                  getchar();
                   fprintf(fp,"%i\n",estoque[i].codigo);
                   
                 printf("Digite o nome do fabricante/fornecedor:\n");
