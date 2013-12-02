@@ -1,0 +1,41 @@
+ printf("\t\tNOVO PRODUTO\n\n");
+                
+               //i = n; 
+                
+                printf("Digite a categoria do produto:\n");
+                  scanf("%i",&estoque[i].cat);
+                  fprintf(fp,"%i\n",estoque[i].cat);
+                
+                printf("Digite o codigo do produto:\n");
+                  scanf("%i",&estoque[i].codigo);
+                  fprintf(fp,"%i\n",estoque[i].codigo);
+                  
+                printf("Digite o nome do fabricante/fornecedor:\n");
+                  fgets( estoque[i].fabricante, 50, fp);
+                  fprintf(fp,"%s\n",estoque[i].fabricante);
+                      
+                printf("Digite o nome do produto:\n");
+                  fgets( estoque[i].nome, 50, fp);
+                  fprintf(fp,"%s\n",estoque[i].nome);
+                
+                printf("Digite a descricao do produto:\n");
+                  fgets( estoque[i].descricao, 500, fp);
+                  fprintf(fp,"%s\n",estoque[i].descricao);
+               
+                printf("Digite o valor do produto. ex:5.99\n");
+                   scanf("%f",&estoque[i].preco);
+                   fprintf(fp,"%.2f\n",estoque[i].preco);
+         
+                printf("Digite a quantidade:\n");
+                   scanf("%i",&estoque[i].quantidade);
+                   fprintf(fp,"%i\n",estoque[i].quantidade);
+                
+                printf("Digite a data de validade dd/mm/aaaa:\n");
+                   scanf("%i %i %i",&estoque[i].validade.d,&estoque[i].validade.m, &estoque[i].validade.a );
+                   fprintf(fp,"%i %i %i\n",estoque[i].validade.d,estoque[i].validade.m, estoque[i].validade.a);
+                   
+                printf("Digite a localizacao no estoque:\n");
+                   scanf("%i %i",&estoque[i].posicao.c,&estoque[i].posicao.p);
+                   fprintf(fp,"%i %i\n",estoque[i].posicao.c, estoque[i].posicao.p);
+                
+              //  i++;
