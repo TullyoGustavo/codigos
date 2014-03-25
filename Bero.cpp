@@ -63,3 +63,6 @@ if(pessoaSexo1 == 'f' || pessoaSexo1 == 'F' && pessoaSexo2 =='m' || pessoaSexo2 
 
 cout <<"Eles possuem "<< chances << " % de chances de se apaixonarem\n";
 }
+
+ return 0;
+ }
